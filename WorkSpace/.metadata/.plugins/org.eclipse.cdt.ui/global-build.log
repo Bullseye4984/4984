@@ -1,0 +1,425 @@
+Info: Nothing to build for Robot
+Info: Nothing to build for Robot
+19:27:28 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Spool.o" "..\\src\\Subsystems\\Spool.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\team 4984/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Subsystems\\Spool.o" "src\\Subsystems\\Fork.o" "src\\Subsystems\\DriveTrain.o" "src\\RobotMap.o" "src\\Robot.o" "src\\OI.o" "src\\Commands\\TankDriveCommand.o" "src\\Commands\\SetSpool4Command.o" "src\\Commands\\SetSpool3Command.o" "src\\Commands\\SetSpool2Command.o" "src\\Commands\\SetSpool1Command.o" "src\\Commands\\SetForkOutCommand.o" "src\\Commands\\SetForkInCommand.o" "src\\Commands\\MoveSpoolCommand.o" "src\\Commands\\MoveForkCommand.o" "src\\Commands\\DriveDistanceCommand.o" "src\\Commands\\AutonomousCommand.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\team 4984/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Robot
+Info: Nothing to build for Robot
+Info: Nothing to build for Robot
+Info: Nothing to build for Robot
+11:53:22 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetSpool2Command.o" "..\\src\\Commands\\SetSpool2Command.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveDistanceCommand.o" "..\\src\\Commands\\DriveDistanceCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetSpool3Command.o" "..\\src\\Commands\\SetSpool3Command.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetForkInCommand.o" "..\\src\\Commands\\SetForkInCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\MoveSpoolCommand.o" "..\\src\\Commands\\MoveSpoolCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\MoveForkCommand.o" "..\\src\\Commands\\MoveForkCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetSpool1Command.o" "..\\src\\Commands\\SetSpool1Command.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetForkOutCommand.o" "..\\src\\Commands\\SetForkOutCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetSpool4Command.o" "..\\src\\Commands\\SetSpool4Command.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Spool.o" "..\\src\\Subsystems\\Spool.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\team 4984/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Subsystems\\Spool.o" "src\\Subsystems\\Fork.o" "src\\Subsystems\\DriveTrain.o" "src\\RobotMap.o" "src\\Robot.o" "src\\OI.o" "src\\Commands\\TankDriveCommand.o" "src\\Commands\\SetSpool4Command.o" "src\\Commands\\SetSpool3Command.o" "src\\Commands\\SetSpool2Command.o" "src\\Commands\\SetSpool1Command.o" "src\\Commands\\SetForkOutCommand.o" "src\\Commands\\SetForkInCommand.o" "src\\Commands\\MoveSpoolCommand.o" "src\\Commands\\MoveForkCommand.o" "src\\Commands\\DriveDistanceCommand.o" "src\\Commands\\AutonomousCommand.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\team 4984/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+11:59:38 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:1: error: expected primary-expression before '}' token
+ }
+ ^
+12:05:42 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:1: error: expected primary-expression before '}' token
+ }
+ ^
+12:14:54 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:1: error: expected primary-expression before '}' token
+ }
+ ^
+12:14:58 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+12:15:45 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:1: error: expected primary-expression before '}' token
+ }
+ ^
+12:21:29 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+12:21:39 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:26: error: no matching function for call to 'Joystick::SetRumble(int)'
+   joystick->SetRumble(500)
+                          ^
+..\src\Subsystems\DriveTrain.cpp:50:26: note: candidate is:
+In file included from C:\Users\team 4984/wpilib/cpp/current/include/WPILib.h:58:0,
+                 from ..\src\Subsystems\DriveTrain.h:15,
+                 from ..\src\Subsystems\DriveTrain.cpp:14:
+C:\Users\team 4984/wpilib/cpp/current/include/Joystick.h:76:7: note: void Joystick::SetRumble(Joystick::RumbleType, float)
+  void SetRumble(RumbleType type, float value);
+       ^
+C:\Users\team 4984/wpilib/cpp/current/include/Joystick.h:76:7: note:   candidate expects 2 arguments, 1 provided
+12:25:16 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+12:25:36 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:23: error: 'kLeftRumble' was not declared in this scope
+   joystick->SetRumble(kLeftRumble type, 500);
+                       ^
+12:25:39 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:23: error: 'kLeftRumble' was not declared in this scope
+   joystick->SetRumble(kLeftRumble type, float 50);
+                       ^
+..\src\Subsystems\DriveTrain.cpp:50:41: error: expected primary-expression before 'float'
+   joystick->SetRumble(kLeftRumble type, float 50);
+                                         ^
+12:25:47 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:23: error: 'kLeftRumble' was not declared in this scope
+   joystick->SetRumble(kLeftRumble type, float 500);
+                       ^
+..\src\Subsystems\DriveTrain.cpp:50:41: error: expected primary-expression before 'float'
+   joystick->SetRumble(kLeftRumble type, float 500);
+                                         ^
+12:29:08 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:23: error: 'kLeftRumble' was not declared in this scope
+   joystick->SetRumble(kLeftRumble, 5);
+                       ^
+12:29:57 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+12:31:06 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:23: error: 'kLeftRumble' was not declared in this scope
+   joystick->SetRumble(kLeftRumble);
+                       ^
+12:31:17 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+12:41:32 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:23: error: 'kLeftRumble' was not declared in this scope
+   joystick->SetRumble(kLeftRumble, 100);
+                       ^
+12:41:54 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+12:45:23 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:23: error: 'RumbleType' was not declared in this scope
+   joystick->SetRumble(RumbleType kLeftRumble, float 50)
+                       ^
+..\src\Subsystems\DriveTrain.cpp:50:47: error: expected primary-expression before 'float'
+   joystick->SetRumble(RumbleType kLeftRumble, float 50)
+                                               ^
+12:47:16 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+12:48:40 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+12:53:48 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:8: error: use of enum 'RumbleType' without previous declaration
+   enum RumbleType r;
+        ^
+..\src\Subsystems\DriveTrain.cpp:50:20: error: invalid type in declaration before ';' token
+   enum RumbleType r;
+                    ^
+..\src\Subsystems\DriveTrain.cpp:53:23: error: no matching function for call to 'Joystick::SetRumble()'
+   joystick->SetRumble()
+                       ^
+..\src\Subsystems\DriveTrain.cpp:53:23: note: candidate is:
+In file included from C:\Users\team 4984/wpilib/cpp/current/include/WPILib.h:58:0,
+                 from ..\src\Subsystems\DriveTrain.h:15,
+                 from ..\src\Subsystems\DriveTrain.cpp:14:
+C:\Users\team 4984/wpilib/cpp/current/include/Joystick.h:76:7: note: void Joystick::SetRumble(Joystick::RumbleType, float)
+  void SetRumble(RumbleType type, float value);
+       ^
+C:\Users\team 4984/wpilib/cpp/current/include/Joystick.h:76:7: note:   candidate expects 2 arguments, 0 provided
+..\src\Subsystems\DriveTrain.cpp:50:19: warning: unused variable 'r' [-Wunused-variable]
+   enum RumbleType r;
+                   ^
+12:54:05 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:8: error: use of enum 'RumbleType' without previous declaration
+   enum RumbleType;
+        ^
+..\src\Subsystems\DriveTrain.cpp:53:23: error: no matching function for call to 'Joystick::SetRumble()'
+   joystick->SetRumble()
+                       ^
+..\src\Subsystems\DriveTrain.cpp:53:23: note: candidate is:
+In file included from C:\Users\team 4984/wpilib/cpp/current/include/WPILib.h:58:0,
+                 from ..\src\Subsystems\DriveTrain.h:15,
+                 from ..\src\Subsystems\DriveTrain.cpp:14:
+C:\Users\team 4984/wpilib/cpp/current/include/Joystick.h:76:7: note: void Joystick::SetRumble(Joystick::RumbleType, float)
+  void SetRumble(RumbleType type, float value);
+       ^
+C:\Users\team 4984/wpilib/cpp/current/include/Joystick.h:76:7: note:   candidate expects 2 arguments, 0 provided
+12:54:39 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::Rumble(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:50:3: error: 'RumbleType' was not declared in this scope
+   RumbleType r;
+   ^
+..\src\Subsystems\DriveTrain.cpp:51:23: error: no matching function for call to 'Joystick::SetRumble()'
+   joystick->SetRumble()
+                       ^
+..\src\Subsystems\DriveTrain.cpp:51:23: note: candidate is:
+In file included from C:\Users\team 4984/wpilib/cpp/current/include/WPILib.h:58:0,
+                 from ..\src\Subsystems\DriveTrain.h:15,
+                 from ..\src\Subsystems\DriveTrain.cpp:14:
+C:\Users\team 4984/wpilib/cpp/current/include/Joystick.h:76:7: note: void Joystick::SetRumble(Joystick::RumbleType, float)
+  void SetRumble(RumbleType type, float value);
+       ^
+C:\Users\team 4984/wpilib/cpp/current/include/Joystick.h:76:7: note:   candidate expects 2 arguments, 0 provided
+12:56:25 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:00:50 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:12:06 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:13:17 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:13:21 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:14:56 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\AutonomousCommand.o" "..\\src\\Commands\\AutonomousCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Robot.o" "..\\src\\Robot.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\MoveForkCommand.o" "..\\src\\Commands\\MoveForkCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetSpool1Command.o" "..\\src\\Commands\\SetSpool1Command.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetForkInCommand.o" "..\\src\\Commands\\SetForkInCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\OI.o" "..\\src\\OI.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:18:17 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\Spool.o" "..\\src\\Subsystems\\Spool.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleLeft(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kLeftRumble , 3000 );
+                  ^
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleRight(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:56:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kRightRumble , 3000)
+                  ^
+13:18:36 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\MoveSpoolCommand.o" "..\\src\\Commands\\MoveSpoolCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetForkOutCommand.o" "..\\src\\Commands\\SetForkOutCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleLeft(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kLeftRumble , 500 );
+                  ^
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleRight(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:56:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kRightRumble , 500);
+                  ^
+13:18:58 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleLeft(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kLeftRumble , 500 );
+                  ^
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleRight(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:56:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kRightRumble , 500);
+                  ^
+13:19:08 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\DriveDistanceCommand.o" "..\\src\\Commands\\DriveDistanceCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetSpool3Command.o" "..\\src\\Commands\\SetSpool3Command.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:20:48 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:20:57 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetSpool4Command.o" "..\\src\\Commands\\SetSpool4Command.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\SetSpool2Command.o" "..\\src\\Commands\\SetSpool2Command.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleLeft(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kLeftRumble , 300 );
+                  ^
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleRight(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:56:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kRightRumble , 300)
+                  ^
+13:21:34 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleLeft(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kLeftRumble , 300 );
+                  ^
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleRight(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:56:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kRightRumble , 300)
+                  ^
+13:21:50 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:23:13 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+..\src\Commands\TankDriveCommand.cpp: In member function 'virtual void TankDriveCommand::Execute()':
+..\src\Commands\TankDriveCommand.cpp:32:1: error: expected ';' before '}' token
+ }
+ ^
+13:23:36 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleLeft(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kLeftRumble , 300 );
+                  ^
+..\src\Subsystems\DriveTrain.cpp:54:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kRightRumble , 300);
+                  ^
+13:23:52 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Commands\\TankDriveCommand.o" "..\\src\\Commands\\TankDriveCommand.cpp" 
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleLeft(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kLeftRumble , 300 );
+                  ^
+..\src\Subsystems\DriveTrain.cpp:54:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kRightRumble , 300);
+                  ^
+13:24:44 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+..\src\Subsystems\DriveTrain.cpp: In member function 'void DriveTrain::RumbleLeft(Joystick*)':
+..\src\Subsystems\DriveTrain.cpp:51:18: error: variable or field 'SetRumble' declared void
+   void SetRumble(joystick->kLeftRumble , 300 );
+                  ^
+13:25:24 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\team 4984/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Subsystems\\Spool.o" "src\\Subsystems\\Fork.o" "src\\Subsystems\\DriveTrain.o" "src\\RobotMap.o" "src\\Robot.o" "src\\OI.o" "src\\Commands\\TankDriveCommand.o" "src\\Commands\\SetSpool4Command.o" "src\\Commands\\SetSpool3Command.o" "src\\Commands\\SetSpool2Command.o" "src\\Commands\\SetSpool1Command.o" "src\\Commands\\SetForkOutCommand.o" "src\\Commands\\SetForkInCommand.o" "src\\Commands\\MoveSpoolCommand.o" "src\\Commands\\MoveForkCommand.o" "src\\Commands\\DriveDistanceCommand.o" "src\\Commands\\AutonomousCommand.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\team 4984/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+13:26:11 **** Incremental Build of configuration Debug for project Robot ****
+Info: Internal Builder is used for build
+arm-frc-linux-gnueabi-g++ -std=c++1y "-IC:\\Users\\team 4984/wpilib/cpp/current/include" "-IC:\\Users\\team 4984\\Desktop\\WorkSpace\\Robot\\src" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Subsystems\\DriveTrain.o" "..\\src\\Subsystems\\DriveTrain.cpp" 
+arm-frc-linux-gnueabi-g++ "-LC:\\Users\\team 4984/wpilib/cpp/current/lib" -Wl,-rpath,/opt/GenICam_v2_3/bin/Linux_armv7-a -o FRCUserProgram "src\\Subsystems\\Spool.o" "src\\Subsystems\\Fork.o" "src\\Subsystems\\DriveTrain.o" "src\\RobotMap.o" "src\\Robot.o" "src\\OI.o" "src\\Commands\\TankDriveCommand.o" "src\\Commands\\SetSpool4Command.o" "src\\Commands\\SetSpool3Command.o" "src\\Commands\\SetSpool2Command.o" "src\\Commands\\SetSpool1Command.o" "src\\Commands\\SetForkOutCommand.o" "src\\Commands\\SetForkInCommand.o" "src\\Commands\\MoveSpoolCommand.o" "src\\Commands\\MoveForkCommand.o" "src\\Commands\\DriveDistanceCommand.o" "src\\Commands\\AutonomousCommand.o" -lwpi 
+c:/frc/bin/../lib/gcc/arm-frc-linux-gnueabi/4.9.1/../../../../arm-frc-linux-gnueabi/bin/ld.exe: warning: libstdc++.so.6, needed by C:\Users\team 4984/wpilib/cpp/current/lib\libFRC_NetworkCommunication.so.1.5.0, not found (try using -rpath or -rpath-link)
+Info: Nothing to build for Robot
+Info: Nothing to build for Robot
