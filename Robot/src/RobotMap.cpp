@@ -17,6 +17,8 @@
 SpeedController* RobotMap::driveTrainLeftMotor = NULL;
 SpeedController* RobotMap::driveTrainRightMotor = NULL;
 RobotDrive* RobotMap::driveTrainRobotDrive = NULL;
+Encoder* RobotMap::driveTrainRightMotorEncoder = NULL;
+Encoder* RobotMap::driveTrainLeftMotorEncoder = NULL;
 SpeedController* RobotMap::spoolSpoolMotor = NULL;
 AnalogPotentiometer* RobotMap::spoolAnalogPotentiometer1 = NULL;
 AnalogPotentiometer* RobotMap::forkAnalogPotentiometer1 = NULL;
@@ -43,6 +45,14 @@ void RobotMap::init() {
         driveTrainRobotDrive->SetInvertedMotor(RobotDrive::kRearLeftMotor, true);
         driveTrainRobotDrive->SetInvertedMotor(RobotDrive::kRearRightMotor, true);        
 
+	driveTrainRightMotorEncoder = new Encoder(0, 1, false, Encoder::k4X);
+	lw->AddSensor("Drive Train", "Right Motor Encoder", driveTrainRightMotorEncoder);
+	driveTrainRightMotorEncoder->SetDistancePerPulse(1.0);
+        driveTrainRightMotorEncoder->SetPIDSourceParameter(Encoder::kRate);
+	driveTrainLeftMotorEncoder = new Encoder(2, 3, false, Encoder::k4X);
+	lw->AddSensor("Drive Train", "Left Motor Encoder", driveTrainLeftMotorEncoder);
+	driveTrainLeftMotorEncoder->SetDistancePerPulse(1.0);
+        driveTrainLeftMotorEncoder->SetPIDSourceParameter(Encoder::kRate);
 	spoolSpoolMotor = new Victor(2);
 	lw->AddActuator("Spool", "Spool Motor", (Victor*) spoolSpoolMotor);
 	
