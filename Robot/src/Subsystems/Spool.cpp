@@ -74,7 +74,8 @@ void Spool::MoveSpoolUp(float input){
 
 void Spool::MoveSpool(Joystick* joystick){
 
-	if(joystick->GetRawAxis(2) != 0){
+	if(joystick->GetRawAxis(2) != 0)
+	{
 		spoolMotor->Set(joystick->GetRawAxis(2));
 	}
 	else

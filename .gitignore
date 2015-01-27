@@ -29,3 +29,8 @@
 
 #Temp files
 *~
+
+#Folders
+.metadata/
+[Rr]emoteSystemsTempFiles/
+/Debug/

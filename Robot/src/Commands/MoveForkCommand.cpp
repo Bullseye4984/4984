@@ -27,7 +27,7 @@ void MoveForkCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void MoveForkCommand::Execute() {
-	Robot::Fork->MoveForkMotor(Robot::oi->getRobotOperator()->GetRawAxis(2))
+	Robot::fork->MoveForkMotor(Robot::oi->getRobotOperator()->GetRawAxis(4));
 }
 
 // Make this return true when this Command no longer needs to run execute()
