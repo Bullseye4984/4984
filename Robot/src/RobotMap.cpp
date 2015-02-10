@@ -17,10 +17,12 @@
 SpeedController* RobotMap::driveTrainLeftMotor = NULL;
 SpeedController* RobotMap::driveTrainRightMotor = NULL;
 RobotDrive* RobotMap::driveTrainRobotDrive = NULL;
-Encoder* RobotMap::driveTrainRightMotorEncoder = NULL;
 Encoder* RobotMap::driveTrainLeftMotorEncoder = NULL;
+Encoder* RobotMap::driveTrainRightMotorEncoder = NULL;
 SpeedController* RobotMap::spoolSpoolMotor = NULL;
 AnalogPotentiometer* RobotMap::spoolAnalogPotentiometer1 = NULL;
+DigitalInput* RobotMap::spoolLimitSwitchUp = NULL;
+DigitalInput* RobotMap::spoolLimitSwitchDown = NULL;
 AnalogPotentiometer* RobotMap::forkAnalogPotentiometer1 = NULL;
 SpeedController* RobotMap::forkForkMotor = NULL;
 
@@ -45,19 +47,25 @@ void RobotMap::init() {
         driveTrainRobotDrive->SetInvertedMotor(RobotDrive::kRearLeftMotor, true);
         driveTrainRobotDrive->SetInvertedMotor(RobotDrive::kRearRightMotor, true);        
 
-	driveTrainRightMotorEncoder = new Encoder(0, 1, false, Encoder::k4X);
-	lw->AddSensor("Drive Train", "Right Motor Encoder", driveTrainRightMotorEncoder);
-	driveTrainRightMotorEncoder->SetDistancePerPulse(1.0);
-        driveTrainRightMotorEncoder->SetPIDSourceParameter(Encoder::kRate);
 	driveTrainLeftMotorEncoder = new Encoder(2, 3, false, Encoder::k4X);
 	lw->AddSensor("Drive Train", "Left Motor Encoder", driveTrainLeftMotorEncoder);
-	driveTrainLeftMotorEncoder->SetDistancePerPulse(1.0);
-        driveTrainLeftMotorEncoder->SetPIDSourceParameter(Encoder::kRate);
+	driveTrainLeftMotorEncoder->SetDistancePerPulse(0.034888888888888886);
+        driveTrainLeftMotorEncoder->SetPIDSourceParameter(Encoder::kDistance);
+	driveTrainRightMotorEncoder = new Encoder(0, 1, false, Encoder::k4X);
+	lw->AddSensor("Drive Train", "Right Motor Encoder", driveTrainRightMotorEncoder);
+	driveTrainRightMotorEncoder->SetDistancePerPulse(0.034888888888888886);
+        driveTrainRightMotorEncoder->SetPIDSourceParameter(Encoder::kDistance);
 	spoolSpoolMotor = new Victor(2);
 	lw->AddActuator("Spool", "Spool Motor", (Victor*) spoolSpoolMotor);
 	
 	spoolAnalogPotentiometer1 = new AnalogPotentiometer(0, 1.0, 0.0);
 	lw->AddSensor("Spool", "Analog Potentiometer 1", spoolAnalogPotentiometer1);
+	
+	spoolLimitSwitchUp = new DigitalInput(4);
+	lw->AddSensor("Spool", "Limit Switch Up", spoolLimitSwitchUp);
+	
+	spoolLimitSwitchDown = new DigitalInput(5);
+	lw->AddSensor("Spool", "Limit Switch Down", spoolLimitSwitchDown);
 	
 	forkAnalogPotentiometer1 = new AnalogPotentiometer(1, 1.0, 0.0);
 	lw->AddSensor("Fork", "Analog Potentiometer 1", forkAnalogPotentiometer1);

@@ -25,10 +25,12 @@ public:
 	static SpeedController* driveTrainLeftMotor;
 	static SpeedController* driveTrainRightMotor;
 	static RobotDrive* driveTrainRobotDrive;
-	static Encoder* driveTrainRightMotorEncoder;
 	static Encoder* driveTrainLeftMotorEncoder;
+	static Encoder* driveTrainRightMotorEncoder;
 	static SpeedController* spoolSpoolMotor;
 	static AnalogPotentiometer* spoolAnalogPotentiometer1;
+	static DigitalInput* spoolLimitSwitchUp;
+	static DigitalInput* spoolLimitSwitchDown;
 	static AnalogPotentiometer* forkAnalogPotentiometer1;
 	static SpeedController* forkForkMotor;
 
