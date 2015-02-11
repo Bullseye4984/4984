@@ -79,9 +79,9 @@ bool DriveTrain::OnTarget(){
 	}
 }
 
-void DriveTrain::DriveToDistance()
+/*void DriveTrain::DriveToDistance()
 {
-	if(OnTarget() == true)
+	if(GetDistance() >= setpoint())
 	{
 		leftMotor->Disable();
 		rightMotor->Disable();
@@ -93,7 +93,7 @@ void DriveTrain::DriveToDistance()
 		rightMotor->Set(1);
 	}
 }
-
+*/
 void DriveTrain::SetSetpoint(double setpoint){
 	leftMotorPIDController->SetSetpoint(setpoint);
 	rightMotorPIDController->SetSetpoint(setpoint * -1);

@@ -22,8 +22,9 @@ DriveToAutoZoneCommand::DriveToAutoZoneCommand() {
 
 // Called just before this Command runs the first time
 void DriveToAutoZoneCommand::Initialize() {
-	Robot::driveTrain->SetSetpoint(163);
-	Robot::driveTrain->DriveToDistance();
+	RobotMap::driveTrainLeftMotorEncoder->Reset();
+	RobotMap::driveTrainRightMotorEncoder->Reset();
+	Robot::driveTrain->TankDrive(.25, .25);
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -32,12 +33,12 @@ void DriveToAutoZoneCommand::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool DriveToAutoZoneCommand::IsFinished() {
-	return Robot::driveTrain->OnTarget();
+	return Robot::driveTrain->OnTarget(163);
 }
 
 // Called once after isFinished returns true
 void DriveToAutoZoneCommand::End() {
-	Robot::driveTrain->Disable();
+	Robot::driveTrain->TankDrive(0, 0);
 }
 
 // Called when another command which requires one or more of the same
