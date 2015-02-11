@@ -22,8 +22,7 @@ DriveDistanceCommand::DriveDistanceCommand() {
 
 // Called just before this Command runs the first time
 void DriveDistanceCommand::Initialize() {
-	Robot::driveTrain->Enable();
-	Robot::driveTrain->SetSetpoint(20);
+
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -33,12 +32,11 @@ void DriveDistanceCommand::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool DriveDistanceCommand::IsFinished() {
-	return Robot::driveTrain->OnTarget();
+	return 0;
 }
 
 // Called once after isFinished returns true
 void DriveDistanceCommand::End() {
-	Robot::driveTrain->Disable();
 }
 
 // Called when another command which requires one or more of the same
