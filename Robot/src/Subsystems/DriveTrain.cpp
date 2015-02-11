@@ -51,7 +51,7 @@ void DriveTrain::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void DriveTrain::TankDrive(Joystick* joystick){
-	TankDrive(joystick->GetRawAxis(1), joystick->GetRawAxis(5));
+	TankDrive(joystick->GetRawAxis(1) * 0.25, joystick->GetRawAxis(5) * 0.25);
 }
 
 void DriveTrain::TankDrive(float left, float right){
@@ -69,14 +69,28 @@ void DriveTrain::Enable(){
 	rightMotorPIDController->Enable();
 }
 
+
 bool DriveTrain::OnTarget(){
-	printf("%s", Distance);
-	printf("%s", rightMotorEncoder->GetDistance());
 	if(leftMotorEncoder->GetDistance() >= Distance || rightMotorEncoder->GetDistance() >= Distance){
 		return true;
 	}
 	else{
 		return false;
+	}
+}
+
+void DriveTrain::DriveToDistance()
+{
+	if(OnTarget() == true)
+	{
+		leftMotor->Disable();
+		rightMotor->Disable();
+
+	}
+
+	else{
+		leftMotor->Set(1);
+		rightMotor->Set(1);
 	}
 }
 

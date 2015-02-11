@@ -23,7 +23,7 @@ DriveToAutoZoneCommand::DriveToAutoZoneCommand() {
 // Called just before this Command runs the first time
 void DriveToAutoZoneCommand::Initialize() {
 	Robot::driveTrain->SetSetpoint(163);
-	Robot::driveTrain->Enable();
+	Robot::driveTrain->DriveToDistance();
 }
 
 // Called repeatedly when this Command is scheduled to run
