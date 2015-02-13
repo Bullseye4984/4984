@@ -22,13 +22,12 @@ DriveToAutoZoneCommand::DriveToAutoZoneCommand() {
 
 // Called just before this Command runs the first time
 void DriveToAutoZoneCommand::Initialize() {
-	RobotMap::driveTrainLeftMotorEncoder->Reset();
-	RobotMap::driveTrainRightMotorEncoder->Reset();
-	Robot::driveTrain->TankDrive(.25, .25);
+	Robot::driveTrain->ResetEncoders();
 }
 
 // Called repeatedly when this Command is scheduled to run
 void DriveToAutoZoneCommand::Execute() {
+	Robot::driveTrain->TankDrive(-.775, -.75);
 }
 
 // Make this return true when this Command no longer needs to run execute()

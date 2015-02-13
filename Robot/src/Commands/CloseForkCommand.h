@@ -9,8 +9,8 @@
 // it from being updated in the future.
 
 
-#ifndef SET_SPOOL_4_COMMAND_H
-#define SET_SPOOL_4_COMMAND_H
+#ifndef CLOSE_FORK_COMMAND_H
+#define CLOSE_FORK_COMMAND_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class SetSpool4Command: public Command {
+class CloseForkCommand: public Command {
 public:
-	SetSpool4Command();
+	CloseForkCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

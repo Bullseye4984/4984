@@ -41,7 +41,7 @@ void DriveTrain::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void DriveTrain::TankDrive(Joystick* joystick){
-	TankDrive(joystick->GetRawAxis(1) * 0.25, joystick->GetRawAxis(5) * 0.25);
+	TankDrive(joystick->GetRawAxis(1), joystick->GetRawAxis(5));
 }
 
 void DriveTrain::TankDrive(float left, float right){
@@ -52,9 +52,7 @@ bool DriveTrain::OnTarget(double distance){
 	if(leftMotorEncoder->GetDistance() >= distance || rightMotorEncoder->GetDistance() >= distance){
 		return true;
 	}
-	else{
-		return false;
-	}
+	return false;
 }
 
 void DriveTrain::ResetEncoders()

@@ -9,8 +9,8 @@
 // it from being updated in the future.
 
 
-#ifndef SET_SPOOL_3_COMMAND_H
-#define SET_SPOOL_3_COMMAND_H
+#ifndef OPEN_FORK_COMMAND_H
+#define OPEN_FORK_COMMAND_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class SetSpool3Command: public Command {
+class OpenForkCommand: public Command {
 public:
-	SetSpool3Command();
+	OpenForkCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

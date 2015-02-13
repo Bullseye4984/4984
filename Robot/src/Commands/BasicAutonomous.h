@@ -9,26 +9,20 @@
 // it from being updated in the future.
 
 
-#ifndef DRIVE_DISTANCE_COMMAND_H
-#define DRIVE_DISTANCE_COMMAND_H
 
+#ifndef BASIC_AUTONOMOUS_H
+#define BASIC_AUTONOMOUS_H
 
-#include "Commands/Subsystem.h"
-#include "../Robot.h"
+#include "Commands/CommandGroup.h"
 
 /**
  *
  *
  * @author ExampleAuthor
  */
-class DriveDistanceCommand: public Command {
-public:
-	DriveDistanceCommand();
-	virtual void Initialize();
-	virtual void Execute();
-	virtual bool IsFinished();
-	virtual void End();
-	virtual void Interrupted();
+class BasicAutonomous: public CommandGroup {
+public:	
+	BasicAutonomous();
 };
 
 #endif
