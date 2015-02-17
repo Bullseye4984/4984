@@ -26,12 +26,12 @@ void OpenForkCommand::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void OpenForkCommand::Execute() {
-	Robot::fork->forkMotor->Set(1);
+	Robot::fork->forkMotor->Set(-1);
 }
 
 // Make this return true when this Command no longer needs to run execute()
 bool OpenForkCommand::IsFinished() {
-	return IsTimedOut();
+	return Robot::fork->OnTarget(0);
 }
 // Called once after isFinished returns true
 void OpenForkCommand::End() {
