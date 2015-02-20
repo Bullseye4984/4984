@@ -79,7 +79,7 @@ void Spool::MoveSpool(Joystick* joystick)
 
 	if(joystick->GetRawAxis(2) != 0)
 	{
-		if(RobotMap::spoolLimitSwitchUp->Get() == true)
+		if(RobotMap::spoolLimitSwitchUp->Get() == false)
 		{
 		spoolMotor->Set(0);
 		}
@@ -90,7 +90,7 @@ void Spool::MoveSpool(Joystick* joystick)
 	}
 	else
 	{
-		if(RobotMap::spoolLimitSwitchDown->Get() == true)
+		if(RobotMap::spoolLimitSwitchDown->Get() == false)
 		{
 		spoolMotor->Set(0);
 		}

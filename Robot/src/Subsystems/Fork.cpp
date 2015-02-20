@@ -86,7 +86,7 @@ void Fork::ResetEncoder()
 
 void Fork::MoveForkMotor(Joystick* joystick)
 {
-	if(joystick->GetRawAxis(0) <= 0)
+	if(joystick->GetRawAxis(0) <= -0.05)
 	{
 		if(RobotMap::forkLimitSwitchOpen->Get() == false)
 		{
@@ -94,12 +94,12 @@ void Fork::MoveForkMotor(Joystick* joystick)
 		}
 		else
 		{
-		forkMotor->Set(joystick->GetRawAxis(0) * -1);
+		forkMotor->Set(joystick->GetRawAxis(0));
 		}
 	}
 	else
 	{
-	forkMotor->Set(joystick->GetRawAxis(0) * -1);
+	forkMotor->Set(joystick->GetRawAxis(0));
 	}
 }
 

@@ -62,10 +62,10 @@ void RobotMap::init() {
 	spoolAnalogPotentiometer1 = new AnalogPotentiometer(0, 1.0, 0.0);
 	lw->AddSensor("Spool", "Analog Potentiometer 1", spoolAnalogPotentiometer1);
 	
-	spoolLimitSwitchUp = new DigitalInput(4);
+	spoolLimitSwitchUp = new DigitalInput(5);
 	lw->AddSensor("Spool", "Limit Switch Up", spoolLimitSwitchUp);
 	
-	spoolLimitSwitchDown = new DigitalInput(5);
+	spoolLimitSwitchDown = new DigitalInput(4);
 	lw->AddSensor("Spool", "Limit Switch Down", spoolLimitSwitchDown);
 	
 	forkForkMotor = new VictorSP(3);
