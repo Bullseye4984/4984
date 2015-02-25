@@ -9,8 +9,8 @@
 // it from being updated in the future.
 
 
-#ifndef TURN_90_DEGREES_CCW_H
-#define TURN_90_DEGREES_CCW_H
+#ifndef SHUT_FORKS_FROM_OUTSIDE_COMMAND_H
+#define SHUT_FORKS_FROM_OUTSIDE_COMMAND_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class Turn90DegreesCCW: public Command {
+class ShutForksFromOutsideCommand: public Command {
 public:
-	Turn90DegreesCCW();
+	ShutForksFromOutsideCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();

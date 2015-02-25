@@ -9,8 +9,8 @@
 // it from being updated in the future.
 
 
-#ifndef GRAB_BIN_SETPOINT_H
-#define GRAB_BIN_SETPOINT_H
+#ifndef SHUT_FORKS_FROM_TOUCHING_COMMAND_H
+#define SHUT_FORKS_FROM_TOUCHING_COMMAND_H
 
 
 #include "Commands/Subsystem.h"
@@ -21,9 +21,9 @@
  *
  * @author ExampleAuthor
  */
-class GrabBinSetpoint: public Command {
+class ShutForksFromTouchingCommand: public Command {
 public:
-	GrabBinSetpoint();
+	ShutForksFromTouchingCommand();
 	virtual void Initialize();
 	virtual void Execute();
 	virtual bool IsFinished();
