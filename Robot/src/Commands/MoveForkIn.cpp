@@ -28,15 +28,7 @@ void MoveForkIn::Initialize() {
 // Called repeatedly when this Command is scheduled to run
 void MoveForkIn::Execute() {
 
-	if(Robot::fork->limitSwitchOpen->Get() == true)
-	{
-	Robot::fork->forkMotor->Set(1);
-	}
-	else
-	{
-		Robot::fork->forkMotor->Set(0);
-	}
-
+	Robot::fork->forkMotor->Set(-1);
 }
 
 // Make this return true when this Command no longer needs to run execute()

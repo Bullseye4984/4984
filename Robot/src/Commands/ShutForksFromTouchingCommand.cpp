@@ -22,7 +22,7 @@ ShutForksFromTouchingCommand::ShutForksFromTouchingCommand() {
 
 // Called just before this Command runs the first time
 void ShutForksFromTouchingCommand::Initialize() {
-	
+	void ResetEncoders();
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -32,7 +32,7 @@ void ShutForksFromTouchingCommand::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool ShutForksFromTouchingCommand::IsFinished() {
-	return Robot::fork->OnTarget(5);
+	return Robot::fork->OnTarget(-5);
 }
 
 // Called once after isFinished returns true

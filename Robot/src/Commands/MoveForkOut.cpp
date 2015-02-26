@@ -27,7 +27,15 @@ void MoveForkOut::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void MoveForkOut::Execute() {
-	Robot::fork->forkMotor->Set(-1);
+
+	if(Robot::fork->limitSwitchOpen->Get() == true)
+	{
+	Robot::fork->forkMotor->Set(1);
+	}
+	else
+	{
+		Robot::fork->forkMotor->Set(0);
+	}
 }
 
 // Make this return true when this Command no longer needs to run execute()

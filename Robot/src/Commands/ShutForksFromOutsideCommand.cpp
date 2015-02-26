@@ -22,7 +22,7 @@ ShutForksFromOutsideCommand::ShutForksFromOutsideCommand() {
 
 // Called just before this Command runs the first time
 void ShutForksFromOutsideCommand::Initialize() {
-	
+	void ResetEncoder();
 }
 
 // Called repeatedly when this Command is scheduled to run
@@ -32,7 +32,7 @@ void ShutForksFromOutsideCommand::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool ShutForksFromOutsideCommand::IsFinished() {
-	return Robot::fork->OnTarget(5);
+	return Robot::fork->OnTarget(-5);
 }
 
 // Called once after isFinished returns true
