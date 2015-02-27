@@ -9,26 +9,14 @@
 // it from being updated in the future.
 
 
-#ifndef OPEN_FORK_COMMAND_H
-#define OPEN_FORK_COMMAND_H
+#include "ShutForksFromOutsideCommand.h"
+#include "Commands/ShutForksFromTouchingCommand.h"
+#include "Commands/RaiseForksCommand.h"
+#include "Commands/DriveToAutoZoneCommand.h"
+#include "Commands/PickupBinAndMoveForwardCommandGroup.h"
 
-
-#include "Commands/Subsystem.h"
-#include "../Robot.h"
-
-/**
-*
-*
-* @author ExampleAuthor
-*/
-class PickupBinAndMoveForawrdCommandGroup : public CommandGroup {
-public:
-	PickupBinAndMoveForawrdCommandGroup();
-	virtual void Initialize();
-	virtual void Execute();
-	virtual bool IsFinished();
-	virtual void End();
-	virtual void Interrupted();
-};
-
-#endif
+PickupBinAndMoveForwardCommandGroup::PickupBinAndMoveForwardCommandGroup() {
+	AddSequential(new ShutForksFromTouchingCommand());
+	AddSequential(new RaiseForksCommand());
+	AddSequential(new DriveToAutoZoneCommand());
+}

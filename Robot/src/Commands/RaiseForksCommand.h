@@ -9,8 +9,8 @@
 // it from being updated in the future.
 
 
-#ifndef SHUT_FORKS_FROM_OUTSIDE_COMMAND_H
-#define SHUT_FORKS_FROM_OUTSIDE_COMMAND_H
+#ifndef RAISE_FORKS_COMMAND_H
+#define RAISE_FORKS_COMMAND_H
 
 
 #include "Commands/Subsystem.h"

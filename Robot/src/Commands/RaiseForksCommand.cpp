@@ -9,7 +9,7 @@
 // it from being updated in the future.
 
 
-#include "ShutForksFromOutsideCommand.h"
+#include "RaiseForksCommand.h"
 
 RaiseForksCommand::RaiseForksCommand() {
 	// Use requires() here to declare subsystem dependencies
@@ -32,7 +32,7 @@ void RaiseForksCommand::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool RaiseForksCommand::IsFinished() {
-	IsTimeout();
+	return this->IsTimedOut();
 }
 
 // Called once after isFinished returns true

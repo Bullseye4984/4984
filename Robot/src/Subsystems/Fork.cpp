@@ -28,11 +28,11 @@ void Fork::InitDefaultCommand() {
 }
 
 bool Fork::OnTarget(double distance){
- if(forkEncoder->GetDistance()<= distance)
- {
-  return true;
- }
- return false;
+	if(forkEncoder->GetDistance() <= distance)
+	{
+		return true;
+	}
+	return false;
 }
 void Fork::ResetEncoder()
 {
