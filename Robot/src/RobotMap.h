@@ -28,7 +28,6 @@ public:
 	static Encoder* driveTrainLeftMotorEncoder;
 	static Encoder* driveTrainRightMotorEncoder;
 	static SpeedController* spoolSpoolMotor;
-	static AnalogPotentiometer* spoolAnalogPotentiometer1;
 	static DigitalInput* spoolLimitSwitchUp;
 	static DigitalInput* spoolLimitSwitchDown;
 	static SpeedController* forkForkMotor;

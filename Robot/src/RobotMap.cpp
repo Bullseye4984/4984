@@ -21,7 +21,6 @@ RobotDrive* RobotMap::driveTrainRobotDrive = NULL;
 Encoder* RobotMap::driveTrainLeftMotorEncoder = NULL;
 Encoder* RobotMap::driveTrainRightMotorEncoder = NULL;
 SpeedController* RobotMap::spoolSpoolMotor = NULL;
-AnalogPotentiometer* RobotMap::spoolAnalogPotentiometer1 = NULL;
 DigitalInput* RobotMap::spoolLimitSwitchUp = NULL;
 DigitalInput* RobotMap::spoolLimitSwitchDown = NULL;
 SpeedController* RobotMap::forkForkMotor = NULL;
@@ -62,7 +61,6 @@ void RobotMap::init() {
 	spoolSpoolMotor = new Victor(2);
 	lw->AddActuator("Spool", "Spool Motor", (Victor*) spoolSpoolMotor);
 	
-	spoolAnalogPotentiometer1 = new AnalogPotentiometer(0, 1.0, 0.0);
 	lw->AddSensor("Spool", "Analog Potentiometer 1", spoolAnalogPotentiometer1);
 	
 	spoolLimitSwitchUp = new DigitalInput(5);
