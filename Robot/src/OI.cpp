@@ -40,9 +40,9 @@ OI::OI(){
 	
 	robotOperator = new Joystick(1);
 	
-	moveForkOutButton = new JoystickButton(robotOperator, 6);
+	moveForkOutButton = new JoystickButton(robotOperator, 5);
 	moveForkOutButton->WhileHeld(new MoveForkOut());
-	moveForkInButton = new JoystickButton(robotOperator, 5);
+	moveForkInButton = new JoystickButton(robotOperator, 6);
 	moveForkInButton->WhileHeld(new MoveForkIn());
      
 

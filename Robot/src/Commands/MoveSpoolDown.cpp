@@ -27,17 +27,17 @@ void MoveSpoolDown::Initialize() {
 
 // Called repeatedly when this Command is scheduled to run
 void MoveSpoolDown::Execute() {
-	Robot::spool->MoveSpoolDown(1);
+	Robot::spool->spoolMotor->Set(1);
 }
 
 // Make this return true when this Command no longer needs to run execute()
 bool MoveSpoolDown::IsFinished() {
-return 0;
+	return RobotMap::spoolLimitSwitchUp->Get() == false;
 }
 
 // Called once after isFinished returns true
 void MoveSpoolDown::End() {
-
+	Robot::spool->spoolMotor->Set(0);
 
 }
 
