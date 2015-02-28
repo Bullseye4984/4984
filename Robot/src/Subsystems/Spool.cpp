@@ -41,11 +41,18 @@ void Spool::InitDefaultCommand() {
 }
 
 void Spool::MoveSpoolDown(float input){
+	if(RobotMap::spoolLimitSwitchDown->Get() == false)
+	{
 	spoolMotor->Set(input);
+	}
+	else
+	{
+	spoolMotor->Set(0);
+	}
 }
 
 void Spool::MoveSpoolUp(float input){
-	spoolMotor-> Set(input * -1);
+	spoolMotor->Set(input);
 }
 
 void Spool::MoveSpool(Joystick* joystick)

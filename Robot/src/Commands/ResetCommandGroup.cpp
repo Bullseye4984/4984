@@ -9,26 +9,12 @@
 // it from being updated in the future.
 
 
-#ifndef OPEN_FORK_COMMAND_H
-#define OPEN_FORK_COMMAND_H
+#include "Commands/ResetCommandGroup.h"
+#include "Commands/MoveForkOut.h"
+#include "Commands/MoveSpoolDown.h"
 
-
-#include "Commands/Subsystem.h"
-#include "../Robot.h"
-
-/**
- *
- *
- * @author ExampleAuthor
- */
-class OpenForkCommand: public Command {
-public:
-	OpenForkCommand();
-	virtual void Initialize();
-	virtual void Execute();
-	virtual bool IsFinished();
-	virtual void End();
-	virtual void Interrupted();
-};
-
-#endif
+ResetCommandGroup::ResetCommandGroup() {
+	//AddSequential(new ShutForksFromTouchingCommand());
+	AddParallel(new MoveForkOut());
+	AddParallel(new MoveSpoolDown());
+}

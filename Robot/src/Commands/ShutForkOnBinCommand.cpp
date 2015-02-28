@@ -22,12 +22,12 @@ ShutForkOnBinCommand::ShutForkOnBinCommand() {
 
 // Called just before this Command runs the first time
 void ShutForkOnBinCommand::Initialize() {
-	SetTimeout(1);
+	SetTimeout(5);
 }
 
 // Called repeatedly when this Command is scheduled to run
 void ShutForkOnBinCommand::Execute() {
-	Robot::fork->forkMotor->Set(1);
+	Robot::fork->forkMotor->Set(-1);
 }
 
 // Make this return true when this Command no longer needs to run execute()
