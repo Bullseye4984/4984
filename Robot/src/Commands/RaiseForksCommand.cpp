@@ -22,12 +22,12 @@ RaiseForksCommand::RaiseForksCommand() {
 
 // Called just before this Command runs the first time
 void RaiseForksCommand::Initialize() {
-	SetTimeout(1); // 1 sec timeout
+	SetTimeout(1.5); // 1 sec timeout
 }
 
 // Called repeatedly when this Command is scheduled to run
 void RaiseForksCommand::Execute() {
-	Robot::spool->MoveSpoolUp(.5);
+	Robot::spool->MoveSpoolUp(1);
 }
 
 // Make this return true when this Command no longer needs to run execute()

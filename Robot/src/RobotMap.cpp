@@ -72,7 +72,7 @@ void RobotMap::init() {
 	
 	forkForkEncoder = new Encoder(6, 7, false, Encoder::k1X);
 	lw->AddSensor("Fork", "Fork Encoder", forkForkEncoder);
-	forkForkEncoder->SetDistancePerPulse(.04);
+	forkForkEncoder->SetDistancePerPulse(0.0004);
         forkForkEncoder->SetPIDSourceParameter(Encoder::kDistance);
 	forkLimitSwitchOpen = new DigitalInput(8);
 	lw->AddSensor("Fork", "Limit Switch Open", forkLimitSwitchOpen);

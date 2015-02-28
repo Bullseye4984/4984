@@ -9,15 +9,14 @@
 // it from being updated in the future.
 
 
-#include "Commands/ShutForksFromTouchingCommand.h"
 #include "Commands/RaiseForksCommand.h"
 #include "Commands/DriveToAutoZoneCommand.h"
-#include "Commands/PickupBinAndMoveForwardCommandGroup.h"
-#include "Commands/CloseForkWithTimeoutCommand.h"
+#include "Commands/PickupTrashBinAndMoveForwardCommandGroup.h"
+#include "Commands/ShutForkOnBinCommand.h"
 
-PickupBinAndMoveForwardCommandGroup::PickupBinAndMoveForwardCommandGroup() {
+PickupTrashBinAndMoveForwardCommandGroup::PickupTrashBinAndMoveForwardCommandGroup() {
 	//AddSequential(new ShutForksFromTouchingCommand());
-	AddSequential(new CloseForkWithTimeoutCommand());
+	AddSequential(new ShutForkOnBinCommand());
 	AddSequential(new RaiseForksCommand());
 	AddSequential(new DriveToAutoZoneCommand());
 }

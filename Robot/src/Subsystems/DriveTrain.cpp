@@ -52,6 +52,15 @@ bool DriveTrain::OnTarget(double distance){
 	if(leftMotorEncoder->GetDistance() >= distance || rightMotorEncoder->GetDistance() >= distance){
 		return true;
 	}
+	if(leftMotorEncoder->GetDistance() >= distance * .75 || rightMotorEncoder->GetDistance() >= distance * 0.75)
+	{
+	robotDrive->TankDrive(-0.6, -0.6);
+		return false;
+	}
+	if(leftMotorEncoder->GetDistance() >= distance * 0.9 || rightMotorEncoder->GetDistance() >= distance * 0.9)
+	{
+	robotDrive->TankDrive(-0.3, -0.3);
+	}
 	return false;
 }
 

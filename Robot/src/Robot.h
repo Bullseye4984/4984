@@ -28,6 +28,7 @@
 
 class Robot : public IterativeRobot {
 public:
+	static SendableChooser* sendableChooser;
 	Command *autonomousCommand;
 	static OI *oi;
 	LiveWindow *lw;
