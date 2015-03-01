@@ -41,7 +41,7 @@ void DriveTrain::InitDefaultCommand() {
 // here. Call these from Commands.
 
 void DriveTrain::TankDrive(Joystick* joystick){
-	TankDrive(joystick->GetRawAxis(1), joystick->GetRawAxis(5));
+	TankDrive(joystick->GetRawAxis(1) * 0.75, joystick->GetRawAxis(5) * 0.75);
 }
 
 void DriveTrain::TankDrive(float left, float right){

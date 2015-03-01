@@ -32,7 +32,7 @@ void DriveToAutoZoneCommand::Execute() {
 
 // Make this return true when this Command no longer needs to run execute()
 bool DriveToAutoZoneCommand::IsFinished() {
-	return Robot::driveTrain->OnTarget(163);
+	return Robot::driveTrain->OnTarget(150);
 }
 
 // Called once after isFinished returns true
